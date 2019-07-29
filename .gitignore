@@ -62,3 +62,5 @@ node_modules
 /modules
 /helpers
 /es
+.idea
+.cache

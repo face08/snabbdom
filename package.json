@@ -26,6 +26,7 @@
     "karma-typescript": "^3.0.13",
     "knuth-shuffle": "^1.0.1",
     "mocha": "^5.2.0",
+    "ts-node": "^8.3.0",
     "typescript": "^3.0.3",
     "xyz": "2.1.0"
   },
@@ -34,11 +35,12 @@
     "test": "testem",
     "compile": "npm run compile-es && npm run compile-commonjs",
     "compile-es": "tsc --outDir es --module es6 --moduleResolution node",
-    "compile-commonjs": "tsc --outDir ./",
+    "compile-commonjs": "tsc --outDir ./tt",
     "prepublish": "npm run compile",
     "release-major": "xyz --repo git@github.com:paldepind/snabbdom.git --increment major",
     "release-minor": "xyz --repo git@github.com:paldepind/snabbdom.git --increment minor",
-    "release-patch": "xyz --repo git@github.com:paldepind/snabbdom.git --increment patch"
+    "release-patch": "xyz --repo git@github.com:paldepind/snabbdom.git --increment patch",
+    "debug": "parcel index.html"
   },
   "repository": {
     "type": "git",
@@ -56,5 +58,8 @@
   "bugs": {
     "url": "https://github.com/paldepind/snabbdom/issues"
   },
-  "homepage": "https://github.com/paldepind/snabbdom#readme"
+  "homepage": "https://github.com/paldepind/snabbdom#readme",
+  "dependencies": {
+    "@types/node": "^12.6.8"
+  }
 }

@@ -11,7 +11,8 @@
             "dom",
             "es5",
             "es2015.core"
-        ]
+        ],
+        "outDir": "bin"
     },
     "files": [
         "src/helpers/attachto.ts",
